@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="40.767">
+    <testcase classname="Valid Login" name="Login as valid user" time="20.855">
+        <system-out><![CDATA[Given user goes to the login page...........................................passed
+When user inserts root and root.............................................passed
+And user clicks submit......................................................passed
+Then user root gets into the welcome page...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Valid Login" name="Login as valid user 2" time="19.757">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given user goes to the login page...........................................passed
+When user inserts error and error...........................................passed
+And user clicks submit......................................................passed
+Then user error gets into the welcome page..................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at StepDefinitions.LoginSteps.get_into_the_welcome_page(LoginSteps.java:65)
+	at ✽.user error gets into the welcome page(file:///C:/CODE/IdeaProjects/floLIVE-automation/src/test/resources/Features/Login.feature:8)
+]]></failure>
+    </testcase>
+</testsuite>

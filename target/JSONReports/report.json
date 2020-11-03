@@ -1,0 +1,227 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-03T08:13:46.716Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5514317800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.LoginSteps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login as valid user",
+        "description": "",
+        "id": "valid-login;login-as-valid-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 630318600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.LoginSteps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6528534200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to the login page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2108988600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user inserts root and root",
+            "match": {
+              "arguments": [
+                {
+                  "val": "root",
+                  "offset": 13
+                },
+                {
+                  "val": "root",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.insert_data(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5999754100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks submit",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.click_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30015400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user root gets into the welcome page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "root",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.get_into_the_welcome_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SanityTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-03T08:14:07.583Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5153097600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.LoginSteps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login as valid user",
+        "description": "",
+        "id": "valid-login;login-as-valid-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 617496000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.LoginSteps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6282408600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user goes to the login page",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2101328500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user inserts error and error",
+            "match": {
+              "arguments": [
+                {
+                  "val": "error",
+                  "offset": 13
+                },
+                {
+                  "val": "error",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.insert_data(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5577638100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks submit",
+            "match": {
+              "location": "StepDefinitions.LoginSteps.click_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat StepDefinitions.LoginSteps.get_into_the_welcome_page(LoginSteps.java:65)\r\n\tat ✽.user error gets into the welcome page(file:///C:/CODE/IdeaProjects/floLIVE-automation/src/test/resources/Features/Login.feature:8)\r\n",
+              "duration": 21999100,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user error gets into the welcome page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "error",
+                  "offset": 5
+                }
+              ],
+              "location": "StepDefinitions.LoginSteps.get_into_the_welcome_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SanityTest"
+          }
+        ]
+      }
+    ],
+    "name": "Valid Login",
+    "description": "",
+    "id": "valid-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Login.feature",
+    "tags": [
+      {
+        "name": "@SanityTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
