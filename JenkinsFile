@@ -12,12 +12,9 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'mvn test -Dcucumber.filter.tags="@debug1"'
+                sh 'mvn test -Dcucumber.filter.tags="@debug2"'
             }
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml'
-                }
+
             }
         }
 
